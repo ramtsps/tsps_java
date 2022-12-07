@@ -49,21 +49,9 @@ public class e_mail extends Application
         submit.setBackground(Background.fill(Color.ROYALBLUE));
         submit.setCenterShape(true);
         submit.setTextFill(Color.WHITE);
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("tq.fxml"));
+     
 
-        submit.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try
-                {
-                    e.start(stage);
 
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
 
         Label ne=new Label("Create account");
         ne.setStyle("-fx-font-weight: bold");
