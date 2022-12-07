@@ -129,19 +129,7 @@ public class Epass extends Application {
         sub.setMaxWidth(100);
         sub.setBackground(Background.fill(Color.BLUEVIOLET));
         sub.setTextFill(Color.WHITE);
-        sub.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try
-                {
-                    e.start(stage);
-
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
+    
 
         Label dApp=new Label("Declaration");
         dApp.setPrefWidth(700);
@@ -201,9 +189,7 @@ public class Epass extends Application {
         //stk.addRow(35,Mobl,mtext1);
         stk.addRow(36,sub);
         stk.setAlignment(Pos.CENTER);
-       // stk.addRow(37,dApp);
-        //stk.addRow(38,ter);
-       // stk.addRow(39,ch);
+       
 
 
 
