@@ -42,63 +42,18 @@ public class indianBank extends Application {
 
         Button with=new Button("Withdrawal");with.setMaxWidth(100);
         with.setBackground(Background.fill(Color.CYAN));
-        with.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try
-                {
-                    e.start(stage);
-
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
+        
+                
         Button dep=new Button("Deposit");dep.setMaxWidth(100);
         dep.setBackground(Background.fill(Color.TURQUOISE));
-        dep.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try
-                {
-                    e.start(stage);
-
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
+        
+                
         Button bala=new Button("Balance");bala.setMaxWidth(100);
         bala.setBackground(Background.fill(Color.GOLD));
-        bala.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try
-                {
-                    e.start(stage);
-
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
+        
+                
         Button cancle=new Button("Cancel");
-        cancle.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try
-                {
-                    e.start(stage);
-
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
+       
         cancle.setBackground(Background.fill(Color.INDIGO));
         cancle.setTextFill(Color.WHITE);
         cancle.setMaxWidth(100);
