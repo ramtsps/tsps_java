@@ -62,17 +62,6 @@ ToggleGroup group=new ToggleGroup();
         Enter.setMaxWidth(100);
         Enter.setBackground(Background.fill(Color.BLUE));
 
-        Enter.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                tq e=new tq();
-                try {
-                    e.start(stage);
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
 
         Scene scene =new Scene(root,700,800);
         root.getChildren().add(ser);
